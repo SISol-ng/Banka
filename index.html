@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Banka</title>
+		<link rel="icon" type="image/ico" href="ui/img/app-icon.png" />
+		<link href="UI/css/style1.css" rel="stylesheet" type="text/css"/>
+		<script src="UI/js/ui.js"></script>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+				<a href = "UI/signin.html"><button type = "button">Login</button></a>
+				<a href = "UI/signup.html"><button type = "button">Sign Up</button></a>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "appdescription">
+				<p>Banka is a light-weight core banking application that powers banking operations such as account
+				creation, customer deposit and withdrawals. This app supports a single bank, where users can signup 
+				and create bank accounts online, but must visit the branch to withdraw or deposit money.</p>
+			</div> <!-- end of appdescription div -->
+			<div class = "slideshow-container">
+				<div class = "mySlides fade">
+					<div class = "numbertext">1 / 5</div>
+					<img src = "UI/img/app-icon.png" style = "width:100%">
+					<div class = "text">Banka ...Bringing bank transactions to your doorstep!</div>
+				</div>
+				<div class = "mySlides fade">
+					<div class = "numbertext">2 / 5</div>
+					<img src = "UI/img/create-account.jpg" style = "width:100%">
+					<div class = "text">Manage your account 24/7 at the comfort of your home.</div>
+				</div>
+				<div class = "mySlides fade">
+					<div class = "numbertext">3 / 5</div>
+					<img src = "UI/img/signup.jpg" style="width:100%">
+					<div class = "text">Just a click is all you need to be a customer.</div>
+				</div>
+				<div class = "mySlides fade">
+					<div class = "numbertext">4 / 5</div>
+					<img src = "UI/img/deposit.jpg" style = "width:100%">
+					<div class = "text">We offer fast deposit because we are here for you.</div>
+				</div>          
+				<div class = "mySlides fade">
+					<div class = "numbertext">5 / 5</div>
+					<img src = "UI/img/atm-cash.jpg" style = "width:100%">
+					<div class = "text">Withdraw your cash as easy and faster as you can think of!</div> 
+				</div>
+			</div>
+			<br>
+			<div style = "text-align:center">
+			<span class = "dot"></span> 
+			<span class = "dot"></span> 
+			<span class = "dot"></span> 
+			<span class = "dot"></span> 
+			<span class = "dot"></span>  
+			</div>
+			<div id = "signup-signin-area">
+				<p>Welcome to Banka, our online banking system that makes account opening and other bank transaction easier like never before </p>
+				<p>Click on sign in below to continue using this application <br /><a href = "UI/signin.html"><button type = "button">Sign In</button></a></p>
+				Or
+				<p>Click on sign up if you are new to the application <br /><a href = "UI/signup.html"><button type = "button">Sign Up</button></a></p>
+				<div id = "passwordreset">Click on<a href = "#">Forgot password</a>to reset your password</div>
+			</div> <!-- end of signup-signin-area div -->
+			<p id = "contact">To find out more about Banka, contact our account manager Muhammed Rabiu Ibrahim on +2347037477926 or email
+			<a href = "mailto:muhammedrabiu3@gmail.com">muhammedrabiu3@gmail.com</a>.</p>
+		</div> <!-- end of content div -->
+	</body>
+	 <script>
+        /******SLIDESHOW***** */
+        let slideIndex = 0;
+        const showSlides = () => {
+            const slides = document.getElementsByClassName('mySlides');
+            const dots = document.getElementsByClassName('dot');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex += 1;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].className += ' active';
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        };
+        showSlides()
+    </script>
+</html>
