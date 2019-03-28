@@ -1,25 +1,25 @@
 //const uploadButton = document.getElementById('uploadphoto');
 //const profilephotoField = document.getElementById('profilephoto');
-const accountnumberField = document.getElementById('accountnumber');
+const accountNumberField = document.getElementById('accountnumber');
 const amountField = document.getElementById('amount');
 
 //const photoAlert = document.querySelector('div#photoalert');
-const accountnumberAlert = document.querySelector('div#accountnumberalert');
+const accountNumberAlert = document.querySelector('div#accountnumberalert');
 const amountAlert = document.querySelector('div#amountalert');
 
-accountnumberField.onblur = () => {
-  if (!accountnumberField.value ) {
-    accountnumberAlert.innerHTML = 'Please fill in Account Number';
+accountNumberField.onblur = () => {
+  if (!accountNumberField.value ) {
+    accountNumberAlert.innerHTML = 'Please fill in Account Number';
   } else {
-    accountnumberAlert.innerHTML = '';
+    accountNumberAlert.innerHTML = '';
   }
 };
 
-accountnumberField.onkeyup = () => {
-  if ((!isNaN(accountnumberField.value) && accountnumberField.value.length !== 10) ||  isNaN(accountnumberField.value)) {
-    accountnumberAlert.innerHTML = 'Please enter correct Account Number';
+accountNumberField.onkeyup = () => {
+  if ((!isNaN(accountNumberField.value) && accountnumberField.value.length !== 10) ||  isNaN(accountnumberField.value)) {
+    accountNumberAlert.innerHTML = 'Please enter correct Account Number';
   } else {
-    accountnumberAlert.innerHTML = '';
+    accountNumberAlert.innerHTML = '';
   }
 };
 
