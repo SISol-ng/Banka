@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Banka-Credit-Debit Account</title>
+		<link rel = "icon" type = "image/ico" href = "img/app-icon.png" />
+		<link href = "css/style1.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "page-header">
+				<h1><span><a onclick = "goBack()" href = "Javascript:void(0)">&#8592; Go Back</a></span>Credit/Debit Bank Account</h1>
+			</div> <!-- end of page-header div -->
+			<div id = "signup-area">
+				<form id = "signup"  method = "post" action = "">
+					<fieldset>
+						<legend>Account Information</legend>
+						<div id = "inputfield">
+							<div>
+								<label for = "accountnumber" class = "fixedwidth">Account Number:<span class = "asterics">*</span></label>
+								<input type = "text" name = "accountnumber" id = "accountnumber" placeholder = "Enter Client's Account Number" required = ""/><br />
+								<div class = "alert" id = "accountnumberalert"></div>
+							</div><br />
+						</div>
+						<div id = "buttonarea">
+							<input type = "submit" value = "   Credit   "/>
+							<input type = "submit" value = "   Debit    "/>
+						</div>
+					</fieldset>
+				</form>
+			</div> <!-- end of signup-area div -->
+		</div> <!-- end of content div -->
+	</body>
+	<script>
+		function goBack() {
+		  window.history.back();
+		}
+	</script>
+	<script src = "js/account.js"></script>
+</html>

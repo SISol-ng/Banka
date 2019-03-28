@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Banka-Deactivate Account</title>
+		<link rel = "icon" type = "image/ico" href = "img/app-icon.png" />
+		<link href = "css/style1.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "page-header">
+				<h1><span><a onclick = "goBack()" href = "Javascript:void(0)">&#8592; Go Back</a></span>Deactivate Bank Account</h1>
+			</div> <!-- end of page-header div -->
+			<div id = "signup-area">
+				<form id = "signup"  method = "post" action = "">
+					<fieldset>
+						<legend>Account Information</legend>
+						<div id = "inputfield">
+							<div id = "account-photo">Client Photograph</div>
+							<div>
+								<label for = "accountname" class = "fixedwidth">Account Name:</label>
+								<input type = "text" name = "accountname" id = "accountname" value = "" readonly/>
+							</div>
+								<label for = "accountnumber" class = "fixedwidth">Account Number:</label>
+								<input type = "text" name = "accountnumber" id = "accountnumber" value="" readonly/>
+							<div>
+								<label for = "email" class = "fixedwidth">Account Type:</label>
+								<input type = "text" name = "email" id = "email" value = "" readonly/>
+							</div>
+							<div>
+								<label for = "username" class = "fixedwidth">Account Balance:</label>
+								<input type = "text" name = "username" id = "username" value = "" readonly/>
+							</div>
+							<div>
+								<label for = "password" class = "fixedwidth">Account Status:</label>
+								<input type = "password" name = "password" id = "password" value = "" readonly/>
+							</div>
+						</div><br />
+						<div id = "buttonarea">
+							<input type = "submit" name = "cancelActivation" value = "   Cancel   "/>
+							<input type = "submit" name = "deactivateAccount" onclick = "deactivateAccount()" value = "Deactivate"/>
+						</div>
+					</fieldset>
+				</form>
+			</div> <!-- end of signup-area div -->
+		</div> <!-- end of content div -->
+	</body>
+	<script>
+		function goBack() {
+		  window.history.back();
+		}
+	</script>
+	<script src = "js/activateDeactivate.js"></script>
+</html>

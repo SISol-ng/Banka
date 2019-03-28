@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Banka-User Dashboard</title>
+		<link rel = "icon" type = "image/ico" href = "img/app-icon.png" />
+		<link href = "css/style1.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "page-header">
+				<h1>My Dashboard</h1>
+				<div id = "dash-setting">
+					<button type = "button" onclick = "logout()">Logout</button>
+					<a href = "change-my-password.html"><button type = "button" onclick = "logout()">Change Password</button></a>
+				</div><br />
+			</div> <!-- end of page-header div -->
+			<div id = "dash-content">
+				<a href = "upload-photo.html"><div id = "photo-upload"> &#128247; </div></a>
+				<div id = "account-photo">Client Photograph</div>
+				<div id = "client-name">Client Name</div><br />
+				<div id = "account-number">Account Number: XXXXXXXXXX</div><br />
+				<div id = "balance">Balance: NGN00:00</div><br />
+				<div id = "transaction-history">
+					<table id = "transaction-table">
+						<caption>Last Five (5) Transactions</caption>
+						<tr>
+							<th>S/N</th>
+							<th>Transaction Type</th>
+							<th>Amount</th>
+							<th>Date</th>
+							<th>Old Balance</th>
+							<th>New Balance</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Debit</td>
+							<td>NGN 20,000:00</td>
+							<td>24-03-2019</td>
+							<td>NGN 115,500:57</td>
+							<td>NGN 95,500:57</td>
+						</tr>
+					</table>
+				</div>
+				<div id = "view-transaction-button"><button type = "button" onclick = "transactionHistory()">View All Transactions</button></div>
+			</div><!-- end of dash-content div -->
+		</div> <!-- end of content div -->
+	</body>
+	<script src = "js/dashboard.js"></script>
+</html>

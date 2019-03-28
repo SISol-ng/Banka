@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Banka-Staff Page</title>
+		<link rel = "icon" type = "image/ico" href = "img/app-icon.png" />
+		<link href = "css/style1.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "page-header">
+				<h1><span id = "staff-page-header">Staff </span><span id = "staff-page-header">Admin</span> Dashboard</h1>
+				<div id = "dash-setting">
+					<button type = "button" onclick = "logout()">Logout</button>
+					<a href = "change-my-password.html"><button type = "button" onclick = "logout()">Change Password</button></a>
+				</div><br />
+			</div> <!-- end of page-header div -->
+			<div id = "dash-content">
+				<a href = "upload-photo.html"><div id = "photo-upload"> &#128247; </div></a>
+				<div id = "account-photo">Staff/Admin Photograph</div>
+				<div id = "staff-name">Staff Name</div>
+				<div id = "staff-id">Staff ID Number: XXXXXXXXXX</div><br />
+				<div id = "staff-buttons">
+					<span class = "adminbutton, staffbutton"><a href = "all-account.html"><button type = "button">View All Account</button></a></span>
+					<span class = "adminbutton, staffbutton"><a href = "client-account.html"><button type = "button">View Single Account</button></a></span>
+					<span class = "staffbutton"><a href = "credit-account.html"><button type = "button">Credit Bank Account</button></a></span>
+					<span class = "staffbutton"><a href = "debit-account.html"><button type = "button">Debit Bank Account</button></a></span>
+					<span class = "adminbutton"><a href = "activate-deactivate.html"><button type = "button">Activate Account</button></a></span>
+					<span class = "adminbutton"><a href = "activate-deactivate.html"><button type = "button">Deactivate Account</button></a></span>
+					<span class = "adminbutton, staffbutton"><a href = "delete-account.html"><button type = "button">Delete Account</button></a></span>
+					<span class = "adminbutton"><a href = "create-staff-account.html"><button type = "button">Register Staff/Admin</button></a></span>
+					<span class = "adminbutton, staffbutton"><a href = "update-photo.html"><button type = "button">Update Profile Photo</button></a></span>
+				</div>
+			</div><!-- end of dash-content div -->
+		</div> <!-- end of content div -->
+	</body>
+	<script src = "js/staffPage.js"></script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Banka-Login</title>
+		<link rel = "icon" type = "image/ico" href = "img/app-icon.png" />
+		<link href = "css/style1.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "page-header">
+				<h1><span><a onclick = "goBack()" href = "Javascript:void(0)">&#8592; Go Back</a></span> User Login</h1>
+			</div> <!-- end of page-header div -->
+			<div id = "signup-area">
+				<form id = "signup"  method = "post" action = "">
+					<fieldset>
+						<div id = "inputfield">
+							<div class = "alert" id = "pagealert"></div>
+							<div>
+								<label for = "username" class = "fixedwidth">Username/Email<span class = "asterics">*</span></label>
+								<input type="text" name = "username" id = "username" placeholder = "Enter your Username or Email Address" required = ""/>
+								<div class = "alert" id = "usernamealert"></div>
+							</div>
+							<div>
+								<label for = "password" class = "fixedwidth">Password<span class = "asterics">*</span></label>
+								<input type = "password" name = "password" id = "password" placeholder = "Enter your Password" required=""/>
+								<div class = "alert" id = "passwordalert"></div>
+							</div>
+						</div>
+						<label class = "fixedwidth" style = "color:white;">.</label>
+						<input type = "checkbox" onclick = "showPassword()"/>  Show Password <br />
+						<div id = "buttonarea">
+							<input type = "submit" id = "loginButton" value = "   Login   "/>
+						</div>
+					</fieldset>
+				</form>
+				<p class = "red-signin"><a href = "signup.html"><button type = "button">Sign Up</button></a> if you are new to the system</p>
+				<p class = "red-signin">Contact Us on +2347037477926 or email <a href = "mailto:muhammedrabiu3@gmail.com">muhammedrabiu3@gmail.com</a>
+				if you encounter difficulty signing in</p>
+			</div> <!-- end of signup-area div -->
+		</div> <!-- end of content div -->
+	</body>
+	<script>
+		function showPassword (){
+			const input = document.getElementById("password");
+			if (input.type === "password"){
+				input.type = "text";
+			}else{
+				input.type = "password";
+			}
+		}
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+	<script src= " js/login.js"></script>
+</html>

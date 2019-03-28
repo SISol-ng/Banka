@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Banka-Create Account</title>
+		<link rel = "icon" type="image/ico" href = "img/app-icon.png" />
+		<link href = "css/style1.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "page-header">
+				<h1>Create Bank Account</h1>
+			</div> <!-- end of page-header div -->
+			<div id = "signup-area">
+				<form id = "signup"  method = "post" action = "">
+					<fieldset>
+						<div id = "inputfield">
+							<div>
+								<label for = "account-type" class = "fixedwidth">Type of Account<span class = "asterics">*</span></label>
+								<select name = "account-type" id = "account-type">
+									<option value = "">Select Type of Account</option>
+									<option value = "Current">Current</option>
+									<option value = "Savings">Savings</option>
+								</select><br />
+								<div class = "alert" id = "typealert"></div>
+							</div><br />
+						</div>
+						<div id = "buttonarea">
+							<input type = "submit" value = "Create Account"/>
+						</div>
+					</fieldset>
+				</form>
+			</div> <!-- end of signup-area div -->
+		</div> <!-- end of content div -->
+	</body>
+	<script src = "js/ui.js"></script>
+</html>

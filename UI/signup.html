@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Banka-User Registration</title>
+		<link rel = "icon" type = "image/ico" href = "img/app-icon.png" />
+		<link href = "css/style1.css" rel="stylesheet" type = "text/css"/>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "page-header">
+				<h1><span><a onclick = "goBack()" href = "Javascript:void(0)">&#8592; Go Back</a></span> User Sign Up</h1>
+			</div> <!-- end of page-header div -->
+			<div id = "signup-area">
+				<form id = "signup"  method = "post" action = "">
+					<fieldset>
+						<legend>User Information</legend>
+						<div class = "alert" id = "pagealert"></div>
+						<div id = "inputfield">
+							<div>
+								<label for = "firstname" class = "fixedwidth">First Name:<span class = "asterics">*</span></label>
+								<input type = "text" name = "firstname" id = "firstname" placeholder = "Enter your First Name" required = ""/>
+								<div class = "alert" id = "firstnamealert"></div>
+							</div>
+								<label for = "lastname" class = "fixedwidth">Last Name:<span class = "asterics">*</span></label>
+								<input type = "text" name = "lastname" id = "lastname" placeholder = "Enter your Last Name" required = ""/>
+								<div class = "alert" id = "lastnamealert"></div>
+							<div>
+								<label for = "email" class = "fixedwidth">Email Address:<span class = "asterics">*</span></label>
+								<input type = "text" name = "email" id = "email" placeholder = "Enter your Email Address" required = ""/>
+								<div class = "alert" id = "emailalert"></div>
+							</div>
+							<div>
+								<label for = "phonenumber" class = "fixedwidth">Phone Number:</label>
+								<input type = "text" name = "phonenumber" id = "phonenumber" placeholder = "Enter Phone Number (e.g +2348098765432)" required = ""/>
+								<div class = "alert" id = "phonealert"></div>
+							</div>
+							<div>
+								<label for = "username" class = "fixedwidth">Username:<span class = "asterics">*</span></label>
+								<input type = "text" name = "username" id = "username" placeholder = "Enter your Username" required = ""/>
+								<div class = "alert" id = "usernamealert"></div>
+							</div>
+							<div>
+								<label for = "password" class = "fixedwidth">Password:<span class = "asterics">*</span></label>
+								<input type = "password" name = "password" id = "password" placeholder = "Enter your Password" required = ""/>
+								<div class = "alert" id = "passwordalert"></div>
+							</div>
+							<div>
+								<label for = "repassword" class = "fixedwidth">Retype Password:<span class = "asterics">*</span></label>
+								<input type = "password" name = "repassword" id = "repassword" placeholder = "Confirm your Password" required = ""/>
+								<div class = "alert" id = "repasswordalert"></div>
+							</div>
+						</div><br />
+						<div id = "buttonarea">
+							<input type = "submit" id = "signupButton" value = "Register"/>
+						</div>
+					</fieldset>
+				</form>
+				<p class = "red-signin"><a href = "signin.html"><button type = "button">Sign In</button></a> if you already have an account</p>
+				<p class = "red-signin">Contact Us on +2347037477926 or email <a href = "mailto:muhammedrabiu3@gmail.com">muhammedrabiu3@gmail.com</a>
+				if you encounter difficulty signing up</p>
+			</div> <!-- end of signup-area div -->
+		</div> <!-- end of content div -->
+	</body>
+	<script>
+		function goBack() {
+		  window.history.back();
+		}
+	</script>
+	<script src = "js/signup.js"></script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Banka-Create Staff Account</title>
+		<link rel = "icon" type = "image/ico" href = "img/app-icon.png" />
+		<link href = "css/style1.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "page-header">
+				<h1><span><a onclick="goBack()" href = "Javascript:void(0)">&#8592; Go Back</a></span>Staff/Admin Registration</h1>
+			</div> <!-- end of page-header div -->
+			<div id = "signup-area">
+				<form id = "signup"  method = "post" action = "">
+					<fieldset>
+						<legend>Staff Information</legend>
+						<div id = "inputfield">
+							<div>
+								<label for = "firstname" class = "fixedwidth">First Name<span class = "asterics">*</span></label>
+								<input type = "text" name = "firstname" id = "firstname" placeholder = "Enter your First Name" required = ""/>
+								<div class = "alert" id = "firstnamealert"></div>
+							</div>
+								<label for = "lastname" class = "fixedwidth">Last Name<span class = "asterics">*</span></label>
+								<input type = "text" name = "lastname" id = "lastname" placeholder = "Enter your Last Name" required = ""/>
+								<div class = "alert" id = "lastnamealert"></div>
+							<div>
+								<label for = "email" class = "fixedwidth">Email Address<span class = "asterics">*</span></label>
+								<input type = "text" name = "email" id = "email" placeholder = "Enter your Email Address" required = ""/>
+								<div class = "alert" id = "emailalert"></div>
+							</div>
+							<div>
+								<label for = "phonenumber" class = "fixedwidth">Phone Number:</label>
+								<input type = "text" name = "phonenumber" id = "phonenumber" placeholder = "Enter Phone Number (e.g +2348098765432)" required = ""/>
+								<div class = "alert" id = "phonealert"></div>
+							</div>
+							<div>
+								<label for = "username" class = "fixedwidth">Username<span class = "asterics">*</span></label>
+								<input type = "text" name = "username" id = "username" placeholder = "Enter your Username" required = ""/>
+								<div class = "alert" id = "usernamealert"></div>
+							</div>
+							<div>
+								<label for = "category" class = "fixedwidth">Category<span class = "asterics">*</span></label>
+								<select name = "category" id = "category">
+									<option value = "">Select User Category</option>
+									<option value = "Admin">Admin</option>
+									<option value = "Staff">Staff</option>
+								</select>
+								<div class = "alert" id = "categoryalert"></div>
+							</div>
+							<div>
+								<label for = "password" class = "fixedwidth">Password<span class = "asterics">*</span></label>
+								<input type = "password" name = "password" id = "password" placeholder = "Enter your Password" required = ""/>
+								<div class = "alert" id = "passwordalert"></div>
+							</div>
+							<div>
+								<label for = "repassword" class = "fixedwidth">Retype Password<span class = "asterics">*</span></label>
+								<input type = "password" name = "repassword" id = "repassword" placeholder = "Confirm your Password" required = ""/>
+								<div class = "alert" id = "repasswordalert"></div>
+							</div>
+						</div><br />
+						<div id = "buttonarea">
+							<input type = "submit" value = "Register"/>
+						</div>
+					</fieldset>
+				</form>
+			</div> <!-- end of signup-area div -->
+		</div> <!-- end of content div -->
+	</body>
+	<script>
+		function goBack() {
+		  window.history.back();
+		}
+	</script>
+	<script src="js/signup.js"></script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Banka-User Dashboard</title>
+		<link rel = "icon" type = "image/ico" href = "img/app-icon.png" />
+		<link href = "css/style1.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "appbrand">
+				<h1>Banka</h1>
+			</div>
+			<div id = "tagline">
+				<h3>...Bringing bank transactions to your doorstep!</h3>
+			</div>
+		</div> <!-- end of header div -->
+		<div id = "content">
+			<div id = "page-header">
+				<h1><span><a href = "dashboard.html">&#8592; Go Back</a></span>Transaction History</h1>
+			</div> <!-- end of page-header div -->
+			<div id = "dash-content">
+				<div id = "transaction-history">
+					<table id = "transaction-table">
+						<caption>All Transactions</caption>
+						<tr>
+							<th>S/N</th>
+							<th>Transaction Type</th>
+							<th>Amount</th>
+							<th>Date</th>
+							<th>Old Balance</th>
+							<th>New Balance</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Debit</td>
+							<td>NGN 20,000:00</td>
+							<td>24-03-2019</td>
+							<td>NGN 115,500:57</td>
+							<td>NGN 95,500:57</td>
+						</tr>
+					</table>
+				</div>
+				<div id = "print-transaction-button"><button type = "button" onclick = "printTransactionHistory()">Print</button></div>
+			</div><!-- end of dash-content div -->
+		</div> <!-- end of content div -->
+	</body>
+	<script src = "js/transactionHistory.js"></script>
+</html>
