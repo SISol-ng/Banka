@@ -1,7 +1,8 @@
 /*
-CSS for Banka App
+CSS for Banka App UI
 */
-/*Beginning of style for index page*/
+
+/****multi page style*****/
 body {
 	font-family: Verdana, Helvetica, Arial, sans-serif;
 	background-color: #e2edff;
@@ -27,20 +28,87 @@ p {
 	font-family: Georgia, Times, serif;
 	font-size: medium;
 }
-#tagline a {
-	float: right;
-	padding-left: 10px;
-}
-#tagline a button{
-	font-size: medium;
-	color: blue;
-	width: 80px;
-}
 #header {
 	background-color: navy;
 	color: white;
 	text-align: center;
 	padding: 1px;
+}
+#page-header{
+	font-size: large;
+	color: #0A384A;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#page-header span a{
+	font-size: x-large;
+	color: blue;
+	text-align: center;
+	padding-bottom: 20px;
+	float: left;
+	text-decoration: none;
+}
+button:hover { 
+  background-color: gray;
+  cursor: pointer;
+}
+input:hover[type="submit"] {
+	background-color: gray;
+	cursor: pointer;
+}
+/****End of multi page style*****/
+
+/*****Home page style******/
+#tagline a {
+	float: right;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+#tagline a button{
+	font-size: x-large;
+	color: blue;
+}
+.mySlides {
+	display: none;
+}
+img {
+	vertical-align: middle;
+	max-height: 400px;    
+}
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: yellow;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 18px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: goldenrod;
 }
 #appdescription{
 	position: relative;
@@ -57,7 +125,7 @@ p {
 	padding: 10px;
 	padding-left: 30px;
 	padding-right: 30px;
-	font-size: large;
+	font-size: x-large;
 	color: blue;
 }
 #signup-signin-area a {
@@ -78,26 +146,9 @@ p {
 	font-style: italic;
 	padding-top: 30px;
 }
-/*end of style for index page*/
+/****End of home page style*****/
 
-/*multi page style*/
-#page-header{
-	font-size: large;
-	color: #0A384A;
-	text-align: center;
-	padding-bottom: 20px;
-}
-#page-header span a{
-	font-size: x-large;
-	color: blue;
-	text-align: center;
-	padding-bottom: 20px;
-	float: left;
-	text-decoration: none;
-}
-/*end of multi page style*/
-
-/*Beginning of style for user signin/signup pages*/
+/*****Signin/signup/form pages style*****/
 form#signup fieldset {
 	border: 2px solid navy;
 	padding: 15px;
@@ -164,9 +215,9 @@ form#signup #buttonarea {
 	font-size: x-large;
 	color: blue;
 }
-/*End of style for user signin/signup pages*/
+/*****End of signin/signup/form pages style*****/
 
-/*Beginning of style for user dashboard*/
+/*****User dashboard/staff page style*****/
 #dash-content{
 	border: 1px solid navy;
 	padding: 20px;
@@ -282,55 +333,4 @@ table#transaction-table caption {
 #staff-buttons a {
 	decoration: none;
 }
-/*End of style for user dashboard page*/
-
-/******* Slideshow ********/
-.mySlides {display: none;}
-img {
-	vertical-align: middle;
-	max-height: 400px;    
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 800px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: yellow;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 25px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 18px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: black;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: goldenrod;
-}
+/*****End of user dashboard/staff page style*****/
