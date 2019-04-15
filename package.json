@@ -1,0 +1,62 @@
+{
+  "name": "banka-repo",
+  "version": "1.0.0",
+  "description": "Online Banking System",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require @babel/register --recursive ./test/*.js --exit --watch",
+    "build": "babel server.js --out-dir build",
+    "start": "nodemon app.js --exec babel-node --",
+    "dev": "nodemon --exec babel-node --presets babel-preset-env ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SISol-ng/Banka-Repo.git"
+  },
+  "keywords": [
+    "\"Online",
+    "Banking\"",
+    "Banking"
+  ],
+  "author": "Muhammed Rabiu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SISol-ng/Banka-Repo/issues"
+  },
+  "homepage": "https://github.com/SISol-ng/Banka-Repo#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "cors": "^2.8.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.1.0",
+    "pg": "^7.9.0",
+    "swagger-jsdoc": "^3.2.8",
+    "uuid": "^3.3.2",
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "bug": "^1.2.0",
+    "mocha": "^6.1.2",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nodemon": "^1.18.10",
+    "nyc": "^13.3.0",
+    "supertest": "^4.0.2"
+  }
+}
